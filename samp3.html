@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> First Activity: HTML xx JS</title>
+</head>
+<body>
+<link rel = "stylesheet" href = "des.css">
+
+<div > 
+  <form name='calculator'> 
+    <input placeholder = 'Input Number' id =num type="text" class = 'inputspace' name='answer'/><br>
+    <br>
+    <input type="button" class = 'but1-90' value='1' onclick=one() />
+    <input type="button" class = 'but1-90' value='2' onclick=two() />
+    <input type="button" class = 'but1-90' value='3' onclick=three() />
+    <input type="button" class = 'extrabut3' value='+' onclick='calculator.answer.value += "+"' />
+    <br>
+    <input type="button" class = 'but1-90' value='4' onclick=four() />
+    <input type="button" class = 'but1-90' value='5' onclick=five() />
+    <input type="button" class = 'but1-90' value='6' onclick=six() />
+    <input type="button" class = 'but1-90' value='-' onclick='calculator.answer.value += "-"' />
+    <br>
+    <input type="button" class = 'but1-90' value='7' onclick=seven() />
+    <input type="button" class = 'but1-90' value='8' onclick=eight() />
+    <input type="button" class = 'but1-90' value='9' onclick=nine() />
+    <input type="button" class = 'extrabut2' value='x' onclick='calculator.answer.value += "*"' />
+    <br>
+    <input type="button" class = 'extrabut3' value='C' onclick='calculator.answer.value = ""' />
+    <input type="button" class = 'extrabut4' value='0' onclick=zero() />
+    <input type="button" class = 'but1-90' value='=' onclick='calculator.answer.value = eval(calculator.answer.value)'/>
+    <input type="button" class = 'extrabut' value='/' onclick='calculator.answer.value += "/"' />
+  </form>
+</div>
+		
+ <script type="text/javascript">		
+		function one(){
+			document.getElementById("num").value += 1;
+		  }
+		  
+		  function two(){
+		    document.getElementById("num").value += 2;
+		  }
+		  
+		  function three(){
+		    document.getElementById("num").value += 3;
+		  }
+		  function four(){
+		    document.getElementById("num").value += 4;
+		  }
+		  function five(){
+		    document.getElementById("num").value += 5;
+		  }
+		  function six(){
+		    document.getElementById("num").value += 6;
+		  }
+		  function seven(){
+		    document.getElementById("num").value += 7;
+		  }
+		  function eight(){
+		    document.getElementById("num").value += 8;
+		  }
+		   function nine(){
+		    document.getElementById("num").value +=9;
+		  }
+		  function zero(){
+		    document.getElementById("num").value += 0;
+		  }
+		  
+		 
+	  </script>
+</body>
+</html>
